@@ -17,44 +17,31 @@
     <!-- Header -->
     <header id="main-header">
         <div class="container">
-            <!-- === LOGO UPDATED HERE === -->
             <a href="#home" class="logo">
                 <svg class="header-logo-svg" viewBox="0 0 190 100" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-        <linearGradient id="dawnGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <!-- Reverted to original logo colors -->
-            <stop offset="0%" style="stop-color:#4F46E5; stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#38BDF8; stop-opacity:1" />
-        </linearGradient>
-    </defs>
+                        <linearGradient id="dawnGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4F46E5; stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#38BDF8; stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
                     <path d="M 10 20 L 50 80 L 90 20" stroke="url(#dawnGradient)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="miter" miterlimit="1">
-                        <animate
-                            attributeName="d"
-                            values="M 10 20 L 50 80 L 90 20; M 10 100 L 50 160 L 90 100; M 10 -60 L 50 0 L 90 -60; M 10 20 L 50 80 L 90 20; M 10 20 L 50 80 L 90 20"
-                            keyTimes="0; 0.25; 0.251; 0.5; 1"
-                            dur="4s" 
-                            repeatCount="indefinite"
-                        />
+                        <animate attributeName="d" values="M 10 20 L 50 80 L 90 20; M 10 100 L 50 160 L 90 100; M 10 -60 L 50 0 L 90 -60; M 10 20 L 50 80 L 90 20; M 10 20 L 50 80 L 90 20" keyTimes="0; 0.25; 0.251; 0.5; 1" dur="4s" repeatCount="indefinite" />
                     </path>
                     <path d="M 100 80 L 140 20 L 180 80" stroke="url(#dawnGradient)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="miter" miterlimit="1">
-                        <animate
-                            attributeName="d"
-                            values="M 100 80 L 140 20 L 180 80; M 100 -20 L 140 -80 L 180 -20; M 100 160 L 140 100 L 180 160; M 100 80 L 140 20 L 180 80; M 100 80 L 140 20 L 180 80"
-                            keyTimes="0; 0.25; 0.251; 0.5; 1"
-                            dur="4s" 
-                            repeatCount="indefinite"
-                        />
+                        <animate attributeName="d" values="M 100 80 L 140 20 L 180 80; M 100 -20 L 140 -80 L 180 -20; M 100 160 L 140 100 L 180 160; M 100 80 L 140 20 L 180 80; M 100 80 L 140 20 L 180 80" keyTimes="0; 0.25; 0.251; 0.5; 1" dur="4s" repeatCount="indefinite" />
                     </path>
                 </svg>
                 <span>VIHAAN</span>
             </a>
-            <!-- ========================== -->
             <nav>
                 <ul>
+                    <li><a href="#philosophy">Philosophy</a></li>
                     <li><a href="#architecture">Architecture</a></li>
                     <li><a href="#economy">Economy</a></li>
+                    <li><a href="#utility">Utility</a></li>
                     <li><a href="#growth">Growth</a></li>
-                    <li><a href="#" class="cta-button">Read Whitepaper</a></li>
+                    <li><a href="Vihaan_Whitepaper.pdf" target="_blank" class="cta-button">Read Whitepaper</a></li>
                 </ul>
             </nav>
         </div>
@@ -72,8 +59,38 @@
                 </div>
             </div>
         </section>
+        
+        <!-- NEW SECTION: Philosophy -->
+        <section id="philosophy" class="scroll-section">
+            <div class="container">
+                <h2 class="section-title">The Vihaan <span class="highlight">Commandments</span></h2>
+                <p class="section-subtitle">Our four pillars for a truly decentralized and equitable financial future.</p>
+                <div class="grid-4">
+                    <div class="card text-center">
+                        <div class="card-icon">👑</div>
+                        <h3>User Sovereignty</h3>
+                        <p>Your keys, your coins. Always. No one can freeze your account, reverse your transaction, or seize your funds. You are the bank.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">💨</div>
+                        <h3>Economic Velocity</h3>
+                        <p>Money is like blood; it's healthiest when it circulates. The protocol's incentive layer is designed to encourage a dynamic and healthy economy.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">⚖️</div>
+                        <h3>Fair Distribution</h3>
+                        <p>The system must reward doing, not just having. Your economic contribution is what matters, not the size of your account.</p>
+                    </div>
+                     <div class="card text-center">
+                        <div class="card-icon">🌍</div>
+                        <h3>Global Scalability</h3>
+                        <p>Ready for global adoption from day one with a blazing fast, energy-efficient network that grows with its user base.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Architecture Section -->
+        <!-- Architecture Section (EXPANDED) -->
         <section id="architecture" class="scroll-section">
             <div class="container">
                 <h2 class="section-title">A Foundational Leap in <span class="highlight">Architecture</span></h2>
@@ -81,50 +98,91 @@
                     <div class="card">
                         <div class="card-icon">⚡</div>
                         <h3>Beyond Blockchain: The Block-Lattice</h3>
-                        <p>No more miners. No more waiting. Every user has their own blockchain, enabling parallel, asynchronous transactions that are instant and completely feeless.</p>
+                        <p>No more miners. No more waiting. Every user has their own personal blockchain, enabling parallel transactions that are instant and completely feeless.</p>
                     </div>
                     <div class="card">
                         <div class="card-icon">🛡️</div>
                         <h3>Logarithmic Delegated Voting</h3>
                         <p>Our "Whale Repellent" consensus mechanism uses logarithmic math to prevent centralization, ensuring voting power is distributed fairly across the network.</p>
                     </div>
+                    <div class="card">
+                        <div class="card-icon">🏛️</div>
+                        <h3>Tier 1: Guardians of the Economy</h3>
+                        <p>Dedicated full nodes run by the community form the network's backbone, validating transactions and securing the ledger for a protocol-determined commission.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📱</div>
+                        <h3>Tier 2: The Sovereign Wallet</h3>
+                        <p>Your wallet is your personal, lightweight node. It signs transactions locally on your device, giving you ultimate control and security without trusting a third party.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Economy Section -->
+        <!-- Economy Section (RESTRUCTURED AND EXPANDED) -->
         <section id="economy" class="scroll-section">
             <div class="container">
-                <h2 class="section-title">The Economic Engine: <span class="highlight">Proof of Activity</span></h2>
-                <p class="section-subtitle">Vihaan's core innovation is an economic model that rewards you for what you *do*, not just what you *have*.</p>
+                <h2 class="section-title">The Economic Engine: <span class="highlight">Proof of Economic Activity</span></h2>
+                <p class="section-subtitle">Vihaan's core innovation is a revolutionary economic model that rewards you for what you *do*, not just what you *have*.</p>
+                
+                <div class="poea-formula-display">
+                    <div class="poea-card">
+                        <h3>Velocity Score</h3>
+                        <span>(Your Economic Output)</span>
+                    </div>
+                    <div class="poea-operator">×</div>
+                    <div class="poea-card">
+                        <h3>Stability Score</h3>
+                        <span>(Your Network Stake)</span>
+                    </div>
+                    <div class="poea-operator">=</div>
+                    <div class="poea-card result">
+                        <h3>Your PoEA Score</h3>
+                        <span>(Your Share of Rewards)</span>
+                    </div>
+                </div>
+
+                <div class="grid-2 poea-breakdown">
+                    <div class="card">
+                        <h4>Boosting Your <span class="highlight">Velocity</span> Score</h4>
+                        <p>This score measures your economic output. It's not just about volume; smart heuristics reward genuine commerce.</p>
+                        <ul class="feature-list">
+                            <li><strong>Transaction "Freshness":</strong> Rewards using coins that have been held for a while, preventing rapid spam-trading.</li>
+                            <li><strong>Unique Counterparty Bonus:</strong> Earn a multiplier for transacting with new users, actively encouraging network growth.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Securing Your <span class="highlight">Stability</span> Score</h4>
+                        <p>This score, based on the <span class="highlight">logarithm</span> of your balance, acts as a fairness anchor and spam-prevention shield.</p>
+                         <ul class="feature-list">
+                            <li><strong>Spam Prevention:</strong> Rapid back-and-forth transactions result in a near-zero average balance, nullifying the PoEA score.</li>
+                            <li><strong>Diminishing Returns:</strong> Logarithmic math means wealthy holders can't dominate rewards. Activity is always the primary factor.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="economy-visual">
-                    <!-- NEW CODE WITH SVG ICON -->
-<div class="economy-core">
-    <!-- Minimalist Bank Icon with Radiant Glow -->
-    <svg class="bank-icon-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <g stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="3">
-            <!-- Triangular Top (Pediment) -->
-            <polygon points="25,20 75,20 50,5" />
-            <!-- Top Step -->
-            <rect x="25" y="20" width="50" height="5" />
-            <!-- Pillars -->
-            <line x1="32" y1="25" x2="32" y2="60" />
-            <line x1="44" y1="25" x2="44" y2="60" />
-            <line x1="56" y1="25" x2="56" y2="60" />
-            <line x1="68" y1="25" x2="68" y2="60" />
-            <!-- Stairs -->
-            <rect x="25" y="60" width="50" height="10" />
-            <rect x="15" y="70" width="70" height="10" />
-            <rect x="5" y="80" width="90" height="10" />
-        </g>
-    </svg>
-    <h4>Vihaan De-central Bank</h4>
-    <span>Adaptive Monetary Policy</span>
-</div>
+                    <div class="economy-core">
+                        <svg class="bank-icon-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="3">
+                                <polygon points="25,20 75,20 50,5" />
+                                <rect x="25" y="20" width="50" height="5" />
+                                <line x1="32" y1="25" x2="32" y2="60" />
+                                <line x1="44" y1="25" x2="44" y2="60" />
+                                <line x1="56" y1="25" x2="56" y2="60" />
+                                <line x1="68" y1="25" x2="68" y2="60" />
+                                <rect x="25" y="60" width="50" height="10" />
+                                <rect x="15" y="70" width="70" height="10" />
+                                <rect x="5" y="80" width="90" height="10" />
+                            </g>
+                        </svg>
+                        <h4>Vihaan De-central Bank</h4>
+                        <span>Adaptive Monetary Policy</span>
+                    </div>
                     <div class="economy-arm inflation">
                         <div class="card">
                             <h5>Adaptive Inflation 📈</h5>
-                            <p>An autonomous system adjusts rewards to incentivize spending in a slow economy and save in an overheated one.</p>
+                            <p>An autonomous system adjusts rewards to incentivize activity in a slow economy and save in an overheated one.</p>
                         </div>
                     </div>
                      <div class="economy-arm deflation">
@@ -134,6 +192,31 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        
+        <!-- NEW SECTION: Utility -->
+        <section id="utility" class="scroll-section">
+            <div class="container">
+                <h2 class="section-title">A Protocol Built for <span class="highlight">Real-World Use</span></h2>
+                 <p class="section-subtitle">Vihaan is more than a currency; it's a platform for a new generation of decentralized services.</p>
+                 <div class="grid-3">
+                    <div class="card text-center">
+                        <div class="card-icon">🏷️</div>
+                        <h3>Vihaan Naming Service (VNS)</h3>
+                        <p>Register a human-readable alias like `yourname.vhc`. The small annual fee is burned, adding to the network's economic strength.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">🔄</div>
+                        <h3>Protocol Subscriptions</h3>
+                        <p>Businesses can use built-in recurring payment functions. A tiny, fixed percentage of each payment is automatically burned.</p>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-icon">⚓</div>
+                        <h3>Secure Data Anchoring</h3>
+                        <p>Anchor a cryptographic hash of any document onto your account-chain for a small, one-time fee that is also burned.</p>
+                    </div>
+                 </div>
             </div>
         </section>
 
@@ -166,6 +249,16 @@
                 </div>
             </div>
         </section>
+
+        <!-- NEW SECTION: CTA -->
+        <section id="cta" class="scroll-section cta-section">
+            <div class="container text-center">
+                <h2 class="section-title">Join the <span class="highlight">Dawn</span></h2>
+                <p class="section-subtitle">Become part of a community building the future of finance. Follow our progress, contribute to the code, and prepare for launch.</p>
+                <a href="#growth" class="btn btn-primary btn-large">Get Launch Updates</a>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -173,7 +266,6 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <!-- Footer logo text cleaned up -->
                     <h3>VIHAAN</h3>
                     <p>Building a more equitable and efficient global economy, one transaction at a time.</p>
                 </div>
@@ -182,26 +274,24 @@
                     <ul>
                         <li><a href="#architecture">Architecture</a></li>
                         <li><a href="#economy">PoEA Economy</a></li>
+                         <li><a href="#utility">Utility</a></li>
                         <li><a href="#growth">Distribution</a></li>
-                        <li><a href="#">Read Whitepaper</a></li>
+                        <li><a href="Vihaan_Whitepaper.pdf" target="_blank">Read Whitepaper</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Community</h4>
                     <ul>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Telegram</a></li>
-                        <li><a href="#">Twitter (X)</a></li>
+                        <li><a href="#" target="_blank">GitHub</a></li>
+                        <li><a href="#" target="_blank">Discord</a></li>
+                        <li><a href="#" target="_blank">Telegram</a></li>
+                        <li><a href="#" target="_blank">Twitter (X)</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Stay Updated</h4>
-                    <p>Join our mailing list for launch announcements.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="your.email@example.com">
-                        <button type="submit">→</button>
-                    </form>
+                    <h4>Contact</h4>
+                     <p>For inquiries, reach out to our protocol team.</p>
+                    <a href="mailto:vihaan.protocol@proton.me" class="contact-email">vihaan.protocol@proton.me</a>
                 </div>
             </div>
             <div class="footer-bottom">
