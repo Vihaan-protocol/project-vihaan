@@ -253,19 +253,32 @@ section {
     margin-top: 5rem;
     padding: 3rem 0;
 }
+/* --- NEW CSS --- */
 .economy-core {
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, var(--color-accent), var(--color-background) 70%);
-    border-radius: 50%;
+    /* We remove the background and border-radius to fit the new icon */
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 2;
-    box-shadow: 0 0 40px var(--color-accent);
 }
+
+/* Style for the new SVG icon */
+.bank-icon-svg {
+    width: 90px; /* Adjust size of the icon */
+    height: 90px;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    /* This filter creates the beautiful radiant glow */
+    filter: drop-shadow(0 0 15px var(--color-accent));
+}
+
+.economy-core h4 { color: #fff; }
+.economy-core span { font-size: 0.9rem; color: var(--color-text-dark); }
 
 .economy-core h4 { color: #fff; }
 .economy-core span { font-size: 0.9rem; color: var(--color-text-dark); }
