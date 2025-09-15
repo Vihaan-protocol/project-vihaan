@@ -422,9 +422,9 @@ section {
 /* --- Media Queries for Responsiveness --- */
 @media(max-width: 992px) {
     .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
-    .economy-visual { flex-direction: column; }
-    .economy-arm { position: static; width: 100%; max-width: 400px; margin: 1rem 0 !important; text-align: left !important;}
-    .economy-core { margin-bottom: 2rem; }
+.economy-visual { flex-direction: column; }
+.economy-arm { position: static; width: 100%; max-width: 400px; margin: 1rem 0 !important; text-align: left !important;}
+.economy-core { margin-bottom: 2rem; }
 }
 
 @media(max-width: 768px) {
@@ -447,4 +447,327 @@ section {
     .footer-grid { grid-template-columns: 1fr; }
     .section-title { font-size: 2rem; }
     .poea-formula-display { flex-direction: column; gap: 0.5rem; }
+}
+
+/* --- Add to your existing style.css file --- */
+
+/* Page Hero for sub-pages */
+.page-hero {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+}
+
+.alt-bg {
+    background-color: rgba(6, 5, 21, 0.5);
+}
+
+/* Promo cards on homepage */
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.promo-card .btn {
+    margin-top: 1.5rem;
+}
+
+/* Larger PoEA formula for Economy page */
+.poea-formula-display-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+.poea-formula-display-large .poea-card {
+    padding: 1.5rem 2rem;
+}
+.poea-formula-display-large .poea-card h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.poea-formula-display-large .poea-operator {
+    font-size: 2.5rem;
+}
+
+/* Whitepaper Page Formatting */
+.container-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.whitepaper-article {
+    background: var(--glass-background);
+    border: var(--glass-border);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    text-align: left;
+    margin-top: 3rem;
+}
+.whitepaper-article h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+.whitepaper-article h3 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.whitepaper-article p {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+.whitepaper-article code {
+    background: #060515;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-family: monospace;
+    color: var(--color-secondary);
+}
+
+/* Responsive adjustments for new elements */
+@media(max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+    .poea-formula-display-large {
+        flex-direction: column;
+    }
+    .whitepaper-article {
+        padding: 1.5rem;
+    }
+}
+
+/* --- ADD THIS TO YOUR EXISTING style.css FILE --- */
+
+/* PoEA Economy Visual with SVG */
+.economy-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3rem 0;
+    min-height: 350px; /* Ensures space for layout */
+}
+.economy-core {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+.bank-icon-svg {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    filter: drop-shadow(0 0 15px var(--color-accent));
+}
+
+.economy-core h4 { color: #fff; }
+.economy-core span { font-size: 0.9rem; color: var(--color-text-dark); }
+.economy-arm { position: absolute; width: 300px; }
+.economy-arm .card { border-left: 3px solid; }
+.inflation { right: 50%; margin-right: 150px; text-align: right; }
+.inflation .card { border-color: var(--color-primary); }
+.deflation { left: 50%; margin-left: 150px; }
+.deflation .card { border-color: var(--color-accent); }
+
+
+/* --- ADD TO THE END OF YOUR style.css FILE --- */
+
+/* ============================================= */
+/* ==          WHITEPAPER LIGHT THEME         == */
+/* ============================================= */
+
+.light-theme {
+    /* Override global variables for light theme */
+    --color-background: #f4f4f9;
+    --color-text: #2c2c2c;
+    --color-text-dark: #555555;
+    --glass-background: rgba(255, 255, 255, 0.8);
+    --glass-border: 1px solid #e0e0e0;
+}
+
+/* On light theme page, hide the animated canvas */
+.light-theme #hero-canvas {
+    display: none;
+}
+
+/* Light theme header adjustments */
+.light-theme #main-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.light-theme #main-header .logo span,
+.light-theme #main-header nav ul li a {
+    color: #2c2c2c;
+}
+
+.light-theme #main-header nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+.light-theme #main-header.scrolled {
+    /* No change needed as it's already solid */
+}
+
+/* Main whitepaper section styling */
+#whitepaper-content {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.whitepaper-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.whitepaper-header h1 {
+    color: #111;
+    font-size: 3rem;
+}
+.whitepaper-header .subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.whitepaper-article {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 3rem 4rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.whitepaper-article h2,
+.whitepaper-article h3,
+.whitepaper-article h4,
+.whitepaper-article h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    font-weight: 600;
+}
+
+.whitepaper-article h2 {
+    font-size: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+.whitepaper-article h3 {
+    font-size: 1.7rem;
+    color: var(--color-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.whitepaper-article h4 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+.whitepaper-article h5 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #444;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.whitepaper-article p {
+    margin-bottom: 1.25rem;
+}
+
+.whitepaper-article ul,
+.whitepaper-article ol {
+    padding-left: 2rem;
+    margin-bottom: 1.25rem;
+}
+.whitepaper-article li {
+    margin-bottom: 0.75rem;
+}
+
+.whitepaper-article strong {
+    font-weight: 600;
+    color: #000;
+}
+
+.whitepaper-article code {
+    background-color: #eef2f9;
+    border: 1px solid #d8e0ed;
+    color: #2d4a7a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95em;
+}
+
+.whitepaper-article .formula-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.whitepaper-article .formula-box code {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: var(--color-primary);
+}
+
+/* Light theme footer adjustments */
+.light-theme #main-footer {
+    background: #e9e9f2;
+    color: #444;
+}
+.light-theme .footer-col h3,
+.light-theme .footer-col h4 {
+    color: #111;
+}
+.light-theme .footer-col ul li a,
+.light-theme .contact-email {
+    color: #555;
+}
+.light-theme .footer-col ul li a:hover,
+.light-theme .contact-email:hover {
+    color: var(--color-primary);
+}
+.light-theme .footer-bottom {
+    border-top: 1px solid #d5d5e2;
+    color: #666;
+}
+
+/* Responsive adjustments for the whitepaper article */
+@media(max-width: 768px) {
+    .whitepaper-article {
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+    .whitepaper-header h1 {
+        font-size: 2.5rem;
+    }
 }

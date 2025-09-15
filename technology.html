@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | Project Vihaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <canvas id="hero-canvas"></canvas>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg class="header-logo-svg" viewBox="0 0 190 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="dawnGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#4F46E5; stop-opacity:1" /><stop offset="100%" style="stop-color:#38BDF8; stop-opacity:1" /></linearGradient></defs><path d="M 10 20 L 50 80 L 90 20" stroke="url(#dawnGradient)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="miter" miterlimit="1"><animate attributeName="d" values="M 10 20 L 50 80 L 90 20; M 10 100 L 50 160 L 90 100; M 10 -60 L 50 0 L 90 -60; M 10 20 L 50 80 L 90 20; M 10 20 L 50 80 L 90 20" keyTimes="0; 0.25; 0.251; 0.5; 1" dur="4s" repeatCount="indefinite" /></path><path d="M 100 80 L 140 20 L 180 80" stroke="url(#dawnGradient)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="miter" miterlimit="1"><animate attributeName="d" values="M 100 80 L 140 20 L 180 80; M 100 -20 L 140 -80 L 180 -20; M 100 160 L 140 100 L 180 160; M 100 80 L 140 20 L 180 80; M 100 80 L 140 20 L 180 80" keyTimes="0; 0.25; 0.251; 0.5; 1" dur="4s" repeatCount="indefinite" /></path></svg>
+                <span>VIHAAN</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="economy.html">Economy</a></li>
+                    <li><a href="launch.html">Launch</a></li>
+                    <li><a href="whitepaper.html" class="cta-button">Read Whitepaper</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="tech-hero" class="page-hero">
+            <div class="container">
+                <h1 class="section-title">A Foundational Leap in <span class="highlight">Architecture</span></h1>
+                <p class="section-subtitle">Vihaan is built on a Directed Acyclic Graph (DAG) ledger and a consensus mechanism engineered for speed, efficiency, and decentralization.</p>
+            </div>
+        </section>
+
+        <section id="block-lattice" class="scroll-section">
+            <div class="container">
+                <h2 class="section-title">Beyond Blockchain: The <span class="highlight">Block-Lattice</span></h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-icon">🔗</div>
+                        <h3>Individual Financial Ledgers</h3>
+                        <p>Instead of a single, congested blockchain, every user has their own personal blockchain called an "account-chain". Only the owner can add new transactions to their chain.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Asynchronous Transactions</h3>
+                        <p>A transaction is a simple handshake between two account-chains: a `send` block on the sender's chain and a `receive` block on the recipient's. This allows for massive parallel processing by the network.</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <p class="section-subtitle">This architecture eliminates the need for mining and block confirmation races, resulting in near-instantaneous and feeless transactions for core VHC transfers.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="nodes" class="scroll-section alt-bg">
+            <div class="container">
+                <h2 class="section-title">The Two-Tiered <span class="highlight">Node System</span></h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-icon">🛡️</div>
+                        <h3>Tier 1: Guardians of the Economy</h3>
+                        <p>These are dedicated full nodes run by the community that form the network's backbone. They store the ledger, validate transactions, and participate in consensus votes for a protocol-determined commission.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📱</div>
+                        <h3>Tier 2: The Sovereign Wallet</h3>
+                        <p>Your wallet is your personal, lightweight node. It signs all transactions locally on your device, giving you ultimate control and security. You never need to trust a third-party server to know your balance or send funds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consensus" class="scroll-section">
+            <div class="container">
+                <h2 class="section-title">Consensus: <span class="highlight">Logarithmic Delegated Voting</span></h2>
+                <p class="section-subtitle">In the rare event of a conflict, Guardian nodes vote. Our consensus engine is fundamentally resistant to centralization through two key innovations.</p>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-icon">🐋</div>
+                        <h3>The Whale Repellent™</h3>
+                        <p>A Guardian's voting power is the <span class="highlight">logarithm</span> of its delegated stake, not a 1:1 ratio. This creates diminishing returns on influence, making it economically rational for users to delegate to smaller, reliable Guardians and promoting a wide distribution of power.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⏳</div>
+                        <h3>The Anti-Sybil Shield</h3>
+                        <p>An account's voting weight is time-weighted, growing to its full potential over 14 days. This prevents attackers from buying VHC and instantly mobilizing it to swing a vote. Power on the Vihaan network must be earned through consistent, long-term participation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h3>VIHAAN</h3>
+            <p>Building a more equitable and efficient global economy, one transaction at a time.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul>
+			<li><a href="index.html">Home</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="economy.html">Economy</a></li>
+                <li><a href="launch.html">Launch</a></li>
+                <li><a href="whitepaper.html">Whitepaper</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+                <li><a href="#" target="_blank">GitHub</a></li>
+                <li><a href="#" target="_blank">Discord</a></li>
+                <li><a href="#" target="_blank">Telegram</a></li>
+                <li><a href="#" target="_blank">Twitter (X)</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+             <p>For inquiries, reach out to our protocol team.</p>
+            <a href="mailto:vihaan.protocol@proton.me" class="contact-email">vihaan.protocol@proton.me</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Project Vihaan Community. Let the dawn begin.</p>
+    </div>
+</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
